@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Teko:400,600,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,15 +22,15 @@
 			</label>
 
 			<ul class="menu">
-				<a href="#">Nieuws</a>
-				<a href="#">FAQ</a>
-				<a href="#">Programma</a>
-				<a href="#">Tickets</a>
-				<a href="#">Plattegrond</a>
-				<a href="#">English</a>
-				<a href="#">Achtergrond</a>
-				<a href="#">Green en Clean</a>
-				<a href="#">Over Lowlands</a>
+				<li><a href="#">Nieuws</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Programma</a></li>
+				<li><a href="#">Tickets</a></li>
+				<li><a href="#">Plattegrond</a></li>
+				<li><a href="#">English</a></li>
+				<li><a href="#">Achtergrond</a></li>
+				<li><a href="#">Green en Clean</a></li>
+				<li><a href="#">Over Lowlands</a></li>
 
 				<label for="chk" class="hide-menu-btn">
 					<i class="fas fa-times"></i>
@@ -39,6 +40,36 @@
 
 	</header>
 	<main>
+
+
+		<form class="filter">
+			<fieldset>
+				<legend>Soort muziek:</legend>
+				<label for="Hiphop">Hiphop</label>
+				<input type="checkbox" name="Hiphop" id="Hiphop" >
+				<label for="Hiphop">Rock</label>
+				<input type="checkbox" name="Rock" id="Rock">
+				<label for="Hiphop">Punk</label>
+				<input type="checkbox" name="Punk" id="Punk">
+			</fieldset>
+
+			<fieldset>
+				<legend>Stages:</legend>
+				<label for="Alpha">Alpha</label>
+				<input type="checkbox" name="Alpha" id="Alpha">
+
+				<label for="Bravo">Bravo</label>
+				<input type="checkbox" name="Bravo" id="Bravo">
+				<label for="Heineken">Heineken</label>
+				<input type="checkbox" name="Heineken" id="Heineken">
+				<label for="Lima">Lima</label>
+				<input type="checkbox" name="Lima" id="Lima">
+				<label for="India">India</label>
+				<input type="checkbox" name="India" id="India">
+				<label for="X-ray">X-ray</label>
+				<input type="checkbox" name="X-ray" id="X-ray">
+			</fieldset>
+		</form>
 
 
 
@@ -73,7 +104,7 @@
 				<h3>THE ORDER</h3>
 				<img src="images/new%20order.png" alt="">
 
-				<p class="intro">Zulke postpunklegendes bij ons op Lowlands, dat is niet minder dan een eer. Natuurlijk kijken we uit naar elektronische dansvloerknallers als Blue Monday en The Perfect Kiss, maar hopelijk sleept New Order ons ook mee de duistere diepte in naar de vroege jaren 80, toen onheilspellende postpunk nog de boventoon voerde. 
+				<p class="intro">Zulke postpunklegendes bij ons op Lowlands, dat is niet minder dan een eer. Natuurlijk kijken we uit naar elektronische dansvloerknallers als Blue Monday en The Perfect Kiss, maar hopelijk sleept New Order ons ook mee de duistere diepte in naar de vroege jaren 80, toen onheilspellende postpunk nog de boventoon voerde.
 					<a class="leesmeer" href="#">lees meer</a>
 				</p>
 			</article>
@@ -89,7 +120,7 @@
 				<h3>JOOST</h3>
 				<img src="images/joost.png" alt="">
 
-				<p class="intro">tot de jaloezie van de telaatkomers werd er gemoshpit alsof er een punkband stond, geraved als op een gabberfeest en gesprongen alsof het, nou ja, simpelweg het perfect Lowlandsfeestje was. De rapper en YouTube-sensatie raakte daar al snel aan gewend, want ook andere zalen en festivalweides bleken te klein voor de terrorparty van de nonchalante entertainer. 
+				<p class="intro">tot de jaloezie van de telaatkomers werd er gemoshpit alsof er een punkband stond, geraved als op een gabberfeest en gesprongen alsof het, nou ja, simpelweg het perfect Lowlandsfeestje was. De rapper en YouTube-sensatie raakte daar al snel aan gewend, want ook andere zalen en festivalweides bleken te klein voor de terrorparty van de nonchalante entertainer.
 				</p>
 				<a class="leesmeer" href="#">lees meer</a>
 			</article>
@@ -105,12 +136,30 @@
 				<h3>DE STRAAT</h3>
 				<img src="images/DE%20STRAAT.png" alt="">
 
-				<p class="intro">In het pantheon van Nederlandse rockbands kan met een gerust hart worden gezegd dat De Staat tot de absolute top behoort. Voor wie de afgelopen tien jaar onder een stoeptegel geleefd heeft: vijf spijkertrekkers uit Nijmegen blazen de pannen strak van de daken met pitch-perfect rockshows overal in den binnen- en buitenlande. 
+				<p class="intro">In het pantheon van Nederlandse rockbands kan met een gerust hart worden gezegd dat De Staat tot de absolute top behoort. Voor wie de afgelopen tien jaar onder een stoeptegel geleefd heeft: vijf spijkertrekkers uit Nijmegen blazen de pannen strak van de daken met pitch-perfect rockshows overal in den binnen- en buitenlande.
 					<a class="leesmeer" href="#">lees meer</a>
 				</p>
-</article>
+			</article>
 		</section>
 		<!-- https://www.youtube.com/watch?v=9YffrCViTVk-->
+		
+	
+		
+		<form>
+			<fieldset class="hoogteblijven">
+				<legend>Op de hoogte blijven van de nieuwste artiesten?</legend>
+				<label for="Voornaam">Voornaam</label>
+				<input type="text" name="Voornaam" id="Voornaam" placeholder="Je voornaam">
+				<label for="Achternaam">Achternaam</label>
+				<input type="text" name="Achternaam" id="Achternaam" placeholder="Je achternaam" required>
+				<label for="Email">Emailadres</label>
+				<input type="Email" name="Email" id="Email" placeholder="Je emailadres" required>
+				<label for="submit">Aanmelden</label>
+				<input type="Submit" name="Submit" id="Submit">
+			</fieldset>
+
+		
+		</form>
 	</main>
 
 	<footer>
@@ -129,7 +178,7 @@
 			</ul>
 
 		</div>
-
+		
 	</footer>
 </body>
 
